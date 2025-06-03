@@ -24,3 +24,58 @@ The API uses a generic counting class to support counting any item type that can
    ```bash
    git clone https://github.com/Zesuliwe17/CountItemAPI.git
    cd CountItemAPI
+   
+Build the project:
+
+bash
+Copy
+Edit
+dotnet build
+Run the API:
+
+bash
+Copy
+Edit
+dotnet run
+Access Swagger UI (if in development mode) at:
+
+bash
+Copy
+Edit
+https://localhost:5001/swagger
+Using the API
+POST /count
+Send a JSON array of string items, and receive a JSON object with counts.
+
+Example request body:
+
+json
+Copy
+Edit
+["apple", "banana", "apple", "orange", "banana", "apple"]
+Example response:
+
+json
+Copy
+Edit
+{
+  "apple": 3,
+  "banana": 2,
+  "orange": 1
+}
+Project Structure
+ItemCounter.cs: Generic class for counting occurrences of items.
+
+Program.cs: API setup with endpoints and Swagger configuration.
+
+Controllers/CountController.cs (if applicable): API controller logic.
+
+Technologies Used
+ASP.NET Core 8
+
+C#
+
+Swagger for API documentation
+
+Created by Zesuliwe17
+Feel free to open issues or pull requests on GitHub for improvements or feedback.
