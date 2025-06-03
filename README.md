@@ -50,27 +50,29 @@ Send a JSON array of string items, and receive a JSON object with counts.
 Example request body:
 
 json
-Copy
-Edit
+
 ["apple", "banana", "apple", "orange", "banana", "apple"]
+
 Example response:
 
 json
-Copy
-Edit
+
 {
   "apple": 3,
   "banana": 2,
   "orange": 1
 }
-Project Structure
+
+## Project Structure
+
 ItemCounter.cs: Generic class for counting occurrences of items.
 
 Program.cs: API setup with endpoints and Swagger configuration.
 
 Controllers/CountController.cs (if applicable): API controller logic.
 
-Technologies Used
+## Technologies Used
+
 ASP.NET Core 8
 
 C#
