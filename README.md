@@ -1,5 +1,4 @@
-# CountItem
-
+# Count Items API
 A .NET Web API that provides functionality to count occurrences of items in a list.  
 The API uses a generic counting class to support counting any item type that can be used as a dictionary key, with a RESTful POST endpoint to count string items.
 
@@ -25,26 +24,27 @@ The API uses a generic counting class to support counting any item type that can
    git clone https://github.com/Zesuliwe17/CountItemAPI.git
    cd CountItemAPI
    
-Build the project:
+2. Build the project:
 
-bash
-Copy
-Edit
+bash: 
 dotnet build
-Run the API:
 
-bash
-Copy
-Edit
+3. Run the API:
+
+bash: 
 dotnet run
-Access Swagger UI (if in development mode) at:
+
+4. Access Swagger UI (if in development mode) at:
 
 bash
-Copy
-Edit
+
 https://localhost:5001/swagger
-Using the API
+
+
+Using the API 
+
 POST /count
+
 Send a JSON array of string items, and receive a JSON object with counts.
 
 Example request body:
@@ -78,4 +78,5 @@ C#
 Swagger for API documentation
 
 Created by Zesuliwe17
+
 Feel free to open issues or pull requests on GitHub for improvements or feedback.
